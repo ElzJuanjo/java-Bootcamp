@@ -5,6 +5,17 @@ import java.util.Scanner;
 
 public class Main {
 
+    static Scanner sc = new Scanner(System.in);
+
+    static void pedirNumero() {
+        try {
+            System.out.print("Ingrese un número: ");
+            int numero = Integer.parseInt(sc.nextLine());
+        } catch (Exception e) {
+            pedirNumero();
+        }
+    }
+
     public static void main(String[] args) {
         int[] vector = {5, 2, 0, 9, 1, 8, 7, 9};
         int[] vectorTres = new int[10];
@@ -38,12 +49,11 @@ public class Main {
         // Busqueda Binaria
         System.out.println("Posición del 5: " + Arrays.binarySearch(vector, 5)); // Busqueda Binaria
 
-        Scanner sc = new Scanner(System.in);
+        pedirNumero();
 
-        try {
-            int numero = Integer.parseInt(sc.nextLine());
-        } catch (Exception e) {
-            System.out.println("Ingrese un numero no sea gvn: " + e);
+        char[] cadenaTexto = "HolaMundo".toCharArray();
+        for (char item : cadenaTexto) {
+            System.out.println(item);
         }
     }
 }
