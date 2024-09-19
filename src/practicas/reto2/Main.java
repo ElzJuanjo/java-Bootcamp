@@ -1,3 +1,0 @@
-// 1. Ingresar una cadena de texto "Juan Jaramillo"...Y el programa me imprime la frecuencia de cada letra.
-// Ejem: J:2, u:1, a:3...
-// 2. Usando ventanas JOptionPane, Manejo de errores con recursividad y funciones, elaborar una calculadora
